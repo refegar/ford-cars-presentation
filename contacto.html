@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <script src="https://kit.fontawesome.com/7968cc1663.js" crossorigin="anonymous"></script>   
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header id="encabezado">
+        <div id="logo">
+            <!--Ruta relativa aca un ejemplo-->
+            <img src="img/logo-ford.png" alt="Logo Ford">
+        </div>
+
+        <!--Ruta Absoluta Ejemplo: 
+<img src="https://static.educacionit.com/educacionit/assets/imagotype-it-fill-v2-color.svg" alt="Logo educacion IT"> -->
+
+
+    
+    <nav id="menu">
+        <ul id="opciones">
+            <!--hay dos tipos de Rutas: Rutas Relativas y rutas Absolutas-->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.html#Vehiculos">Vehiculos</a></li>
+            <li><a href="contacto.html" style="color:#fff;background-color: #2d2d98; ">Contactos</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <h1 class="titulo">Contactanos</h1>
+    <section id="formulariocontacto">
+
+        <form action="datos.php" method="post" id="formulario">
+
+        
+            <div>
+
+                <label for="nombre">Nombre *</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" placeholder="Indique su nombre"  required>
+          
+
+            </div>
+
+            <div>
+
+                <label for="apellido">Apellido * </label>
+                <br>
+                <input type="text" name="apellido" id="apellido" placeholder="Indique su apellido" required>
+          
+
+            </div>
+
+            <div>
+
+                <label for="email">Email * </label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Ejemplo@gmail.com" required>
+          
+
+            </div>
+
+
+            <div>
+
+                <label for="comentarios">Comentarios *</label>
+                <br>
+
+          <textarea name="comentarios" id="comentarios" cols="30" rows="7" placeholder="Enviar todos tus comentarios" required></textarea>
+
+            </div>
+
+
+            <div>
+                <label for="tipoVehiculo">Tipo de vehiculo</label>
+                <br>
+                <select name="TipoVehiculo" id="tipoVehiculo">
+
+             <option value="00"  selected disabled>Selecionar...</option>
+             <option value="01">Camion</option>
+             <option value="02">Camioneta</option>
+             <option value="03">Carro - coupe</option>
+             <option value="04">carro - Sedan</option>
+
+                </select>
+
+           
+            </div>
+            
+    
+
+
+
+
+
+            <div >
+
+<!--<input type="submit" value="Enviar Comentarios" >
+-->
+
+<!--<button type="submit"><img src="img/logo-ford.png" alt="Logo"></button>
+-->         
+<button id="boton" onclick="alert('Formulario de prueba...')" ><i class="fa-solid fa-floppy-disk"></i> Enviar comentarios </button>
+
+</div>
+
+
+
+        </form>
+
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/*
+
+Aplicar css debemos conciderar lo siguiente:
+1.- existe algo que se llama selectores:
+ Etiqueta(h1 -body-h2-p-ul-ol) 
+ Clases(.subtitulo) 
+ //- Identificacon unicos 
+ ID (#identificador)
+ * selector universal--> creacion de bondades de trabajo esta diciendo manera grobal se impactar toda la pagina y se coloca pocas carateristicas
+ 
+*/
+
+
+
+
+/*=== CSS Global===*/
+
+*
+{
+box-sizing: border-box;
+margin: 0%;
+
+}
+
+li
+{
+padding: 1px;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* -------------- encabezado */
+img,video
+{
+width:100%;
+
+}
+body{
+    font-size: 1.2em;
+
+}
+
+#encabezado
+{
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 56px;
+}
+    
+
+
+#opciones
+{
+    display:flex;
+    justify-content: space-evenly;
+    margin-right: 40px;
+
+}
+
+
+header #menu ul li a 
+{
+color: #6b6bff;
+font-family:'Anton', sans-serif;
+font-size: 18px;
+padding: 19px 10px 16px 10px;
+border-bottom: 1px solid #fff;
+border-radius: 5px;
+}
+
+header #menu ul li a:hover 
+{
+
+color: #fff;
+background-color: #2d2d98;
+font-family:Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+border-bottom: 1px solid #fff;
+padding: 19px 10px 14px 10px;
+}
+article h2{
+    padding-bottom: 10px;
+}
+
+
+img{
+
+width:130px;
+
+}
+
+ul{
+
+ list-style-type: none;   
+}
+a{
+
+text-decoration: none;
+
+}
+
+
+
+/*===CSS a la seccion titulo  ===  
+
+nav
+{
+background-color: aquamarine;
+
+}
+
+ */
+
+/*
+#cajatitulo
+{
+background-color: aquamarine;
+
+}*/
+
+
+#logo{
+
+    padding-bottom: 4px;
+    padding-top: 10px;
+    padding-left: 35px;
+
+/* padding: 50px;
+border:20px solid red ;*/
+
+}
+
+.titulo
+{
+
+color:white;
+background-color: #2d2d98;
+font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+text-align: center;
+/*font-family: Arial, Helvetica, sans-serif;*/
+/* unidades de medidas: absolutas (px) y Relativas(% , em, Rem) se adaptan a diapositivo*/
+font-size: 40px;
+padding: 25px;
+/*=== Trabajando modelo de bloque - propiedades de caja
+width:50%;
+height:300px;
+se le puede dar el padding - arriba-derecha-abajo-izquierda
+padding: 50px 10px 20px 100px;
+border: 10px dotted red;
+border:10px double red;
+border:10px inset red;
+margin:200px
+===*/
+
+}
+
+/*=== CSS seccion de productos   ===*/
+
+
+#publicidad
+{
+background-image: url("../img/banner.jpg");
+height:700px;
+background-size: contain;
+background-attachment: fixed;
+}
+
+#piedepagina
+{
+width: 100%;  
+display: flex; 
+justify-content:flex-start;
+height: 100%;
+padding: 2%;
+font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+
+}
+#piedepagina h3{
+    width: 50%;
+}
+#redessociales
+{
+    display: flex; 
+    width: 60%;
+    justify-content: flex-end ;
+    
+    
+
+}
+
+#productos
+{
+display: flex;
+text-align: center;
+padding: 20px;
+font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+
+}
+.producto
+{
+
+padding: 10px;
+
+
+}
+
+
+.subtitulo
+{
+
+color:#2d2d98;
+font-size: 33px;
+
+}
+.boton
+{
+    color:white;
+    background-color:#2d2d98;
+    padding:15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.boton:hover
+{
+color: #2d2d98;
+background-color: white;
+border: 2px solid #2d2d98;
+
+}
+
+/*--- aplicando CSS a la seccion Publicidad*/
+
+@media screen and (max-width:750px){
+ #logo{
+    display: none;
+ }
+}

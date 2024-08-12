@@ -1,0 +1,82 @@
+body{
+  
+    background-color: #2d2d98;
+}
+
+textarea
+{
+    resize: none;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    margin: 10px;
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 0.8em;
+}
+#tipoVehiculo{
+    font-size: 0.9em;
+    margin: 10px;
+    width: 70%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #696262;
+}
+
+#formulariocontacto
+
+{
+/* aplicado CSS al formulario]*/
+background-image: url('../img/banner-formulario.webp');
+height: 100%;
+background-repeat: no-repeat;
+background-size: contain;
+font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+/* Aplicando CSS Al formulario */
+
+#formulario
+{
+
+background-color:rgba(255,255,255,0.7) ;
+width: 400px;
+text-align: center;
+padding: 15px;
+border-radius: 20px;
+margin: auto;
+
+
+}
+label{
+    margin: 10px;
+}
+
+/*Aplicando CSS al boton ===*/
+#boton
+{
+    color: white;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+#boton:hover
+{
+color:blue;
+background-color: white;
+border: rgb(122, 151, 201) 2px outset;
+
+}
+#encabezado{
+    background-color: #fff;
+}
